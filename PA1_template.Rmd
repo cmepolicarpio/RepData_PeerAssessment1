@@ -17,7 +17,6 @@ library(lattice)
 
 Read Data
 ```{r, echo = TRUE}
-getwd()
 activity <- read.csv(".\\data\\activity.csv")
 activity$date <- as.POSIXct(activity$date, format = "%Y-%m-%d") #convert date
 head(activity)

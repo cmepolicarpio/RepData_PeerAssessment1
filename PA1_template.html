@@ -133,8 +133,6 @@ library(ggplot2)
 library(tidyverse)
 library(lattice)</code></pre>
 <p>Read Data</p>
-<pre class="r"><code>getwd()</code></pre>
-<pre><code>## [1] &quot;C:/Users/Amy/Documents/coursera/reproducible/project1/RepData_PeerAssessment1&quot;</code></pre>
 <pre class="r"><code>activity &lt;- read.csv(&quot;.\\data\\activity.csv&quot;)
 activity$date &lt;- as.POSIXct(activity$date, format = &quot;%Y-%m-%d&quot;) #convert date
 head(activity)</code></pre>

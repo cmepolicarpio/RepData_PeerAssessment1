@@ -19,14 +19,6 @@ library(lattice)
 Read Data
 
 ```r
-getwd()
-```
-
-```
-## [1] "C:/Users/Amy/Documents/coursera/reproducible/project1/RepData_PeerAssessment1"
-```
-
-```r
 activity <- read.csv(".\\data\\activity.csv")
 activity$date <- as.POSIXct(activity$date, format = "%Y-%m-%d") #convert date
 head(activity)
